@@ -3,7 +3,7 @@ from src.user import User, Roles
 from src.actions import Action
 
 
-def add_user_action(): 
+def add_user_action():
     pass
 
 def get_action(selection: str):
@@ -12,26 +12,28 @@ def get_action(selection: str):
 def process_action(action: str):
     pass
 
+def action(x):
+    return x * 2
+
+def test_action():
+    assert action(2) == 4
+
 actions = [
     Action('1', 'Add User', add_user_action)
 ]
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    print('Select your action:')
+    # print('Select your action:')
 
-    [print(f'{i.selection}: {i.name}') for i in actions]
+    # [print(f'{i.selection}: {i.name}') for i in actions]
 
 
-    while True:
+    # while True:
 
-        action = None
-        action = get_action(input('Selection: '))
+    #     action = None
+    #     action = get_action(input('Selection: '))
 
-        if not action:
-            continue
+    #     if not action:
+    #         continue
 
-        print(action)
-        
-
-    
-    pass
+    #     print(action)
